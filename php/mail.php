@@ -5,7 +5,7 @@
       $body = $_POST['message'];
       $mail->AddReplyTo($_POST['email'],$_POST['name']);
       $mail->SetFrom($_POST['email'],$_POST['name']);
-      $mail->AddAddress("ttrader_atl@yahoo.com", "Tristan Lobaugh");
+      $mail->AddAddress("tlobaugh@gmail.com", "Tristan Lobaugh");
       $mail->Subject    = "Message from TristanLobaugh.com";
       $mail->MsgHTML("Message: " . $body);
 
@@ -14,5 +14,6 @@
       } else {
       echo "Message sent!";
       }
+      header('location: /');
 
 ?>
