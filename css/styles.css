@@ -119,11 +119,11 @@ h2{
 }
 hr{
 	border-image: url(../img/border.jpg) 20;
-	border-top: 1px solid transparent;
+	border-top: 2px solid transparent;
 	border-bottom: 0;
 	border-left: 0;
 	border-right: 0;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 i{
 	color: green;
@@ -147,12 +147,34 @@ i{
     display: none;
 }
 .portfolio-item{
-	width: 33%;
+/*	width: 33%;*/
+	position: relative;
 	margin: 10px 0;
 }
 .portfolio-item img{
 	border-radius: 10px;
 	width: 100%;
+}
+.item-cover{
+	position: absolute;
+	top: 5%;
+	left: 7.5%;
+	margin: auto;
+	width: 85%;
+	height: 90%;
+	background: rgba(241, 241, 241, 0.8);
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.item-cover:hover{
+	opacity: 1;
+}
+.line{
+	margin: auto;
+	width: 80%;
 }
 #contact{
 	background-color: black;
