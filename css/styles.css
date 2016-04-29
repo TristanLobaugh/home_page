@@ -149,7 +149,6 @@ i{
     display: none;
 }
 .portfolio-item{
-/*	width: 33%;*/
 	position: relative;
 	margin: 10px 0;
 }
@@ -186,6 +185,10 @@ i{
 }
 .social-links-list img{
 	width: 100%;
+}
+.social-text{
+	color: #F7F7F7;
+	text-align: center;
 }
 #contact-form input{
 	border: 1px solid transparent;
