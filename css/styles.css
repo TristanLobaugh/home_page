@@ -39,7 +39,7 @@ header{
 	text-align: center;
 	font-size: 26px;
 }
-li{
+nav li{
 	height: 60px;
 	list-style: none;
 }
@@ -62,13 +62,13 @@ nav li:hover a{
 	overflow: hidden;
 }
 #secondary-navigation li{
+	background-color: black!important;
 	width: 14.25%;	
 	height: 40px;
 	list-style: none;
 	text-align: center;	
 }
 #secondary-navigation a{
-	background-color: #0d0d0d!important;
 	transition: border 0.5s;
 	color: #F7F7F7;
 	font-size: 15px;
@@ -123,7 +123,9 @@ h1{
 	color: white;
 }
 #about li{
+	margin: 40px 0;
 	font-size: 22px;
+	list-style: none;
 }
 #skills{
 	background-color: black;
@@ -134,6 +136,7 @@ h2{
 }
 #skills li{
 	height: 30px;
+	list-style: none;
 }
 hr{
 	border-image: url(../img/border.jpg) 20;

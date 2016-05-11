@@ -18,8 +18,12 @@ $(document).ready(function(){
 		total : 65,
 		on: 'header'
 	});
-
-	$("#page-wrapper").css("margin-left", "16.666666%");
+	if($(window).width() < 768){
+		$("#secondary-navigation li").css("width", "40%");
+	}
+	if($(window).width() > 992 ){
+		$("#page-wrapper").css("margin-left", "16.666666%");
+	}
 
 	$("#contact-form-btn").click(function(){
 		$("#contact-form").submit();
