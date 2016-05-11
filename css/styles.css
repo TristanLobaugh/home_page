@@ -58,6 +58,22 @@ nav li:hover a{
 	border-left: 0;
 	border-right: 0;
 }
+#sec-list{
+	overflow: hidden;
+}
+#secondary-navigation li{
+	width: 14.25%;	
+	height: 40px;
+	list-style: none;
+	text-align: center;	
+}
+#secondary-navigation a{
+	background-color: #0d0d0d!important;
+	transition: border 0.5s;
+	color: #F7F7F7;
+	font-size: 15px;
+	padding: 10px 0;
+}
 .navbar-inverse{
 	background-color: black!important;
 	border: 0;

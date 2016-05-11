@@ -9,33 +9,48 @@
 <body>
 	
 	<div id="page-wrapper">
-		<div id="sidebar-wrapper" class="header-sidebar col-md-2">
+		<div id="sidebar-wrapper" class="header-sidebar col-md-2 hidden-sm hidden-xs">
 			<nav id="top-navigation" class="navbar navbar-inverse navbar-fixed-left">
-          <div id="header-wrapper">
-            <div id="header-pic-wrapper">
-              <a id="header-pic" href="index.html" class="logo-wrapper"><img src="img/anvil3.png" alt="Tristan Lobaugh"></a>
-            </div>
-            <div class="header-name">Tristan<br>Lobaugh</div>
+        <div id="header-wrapper">
+          <div id="header-pic-wrapper">
+            <a id="header-pic" href="index.html" class="logo-wrapper"><img src="img/anvil3.png" alt="Tristan Lobaugh"></a>
           </div>
-          
-				<!-- <a id="header-pic" href="index.html" class="logo-wrapper"><img src="img/me.jpg" alt="Tristan Lobaugh"></a> -->
-				<ul class="nav top-menu">
-					<li><a href="#intro">HOME</a></li>
-					<li><a href="#about">ABOUT ME</a></li>
-					<li><a href="#skills">SKILLS</a></li>
-					<li><a href="#experience">EXPERIENCE</a></li>
-					<li><a href="#education">EDUCATION</a></li>
-					<li><a href="#portfolio">PORTFOLIO</a></li>
-					<li><a href="#contact">CONTACT</a></li>
-				</ul>
+          <div class="header-name">Tristan<br>Lobaugh</div>
+        </div>
+  				<ul class="nav top-menu">
+  					<li><a href="#intro">HOME</a></li>
+  					<li><a href="#about">ABOUT ME</a></li>
+  					<li><a href="#skills">SKILLS</a></li>
+  					<li><a href="#experience">EXPERIENCE</a></li>
+  					<li><a href="#education">EDUCATION</a></li>
+  					<li><a href="#portfolio">PORTFOLIO</a></li>
+  					<li><a href="#contact">CONTACT</a></li>
+  				</ul>
 			</nav>
 		</div>
+    <div id="secondary-nav-bar" class="hidden-lg hidden-md col-sm-12 col-xs-12">
+    <nav id="secondary-navigation" class="navbar navbar-inverse navbar-fixed-top">
+      <div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+      </div> 
+        <div id="mainNavBar" class="collapse navbar-collapse">
+          <ul id="sec-list" class="nav top-menu">
+            <li class="col-sm-3"><a href="#about">HOME</a></li>
+            <li class="col-sm-3"><a href="#about">ABOUT ME</a></li>
+            <li class="col-sm-3"><a href="#skills">SKILLS</a></li>
+            <li class="col-sm-3"><a href="#experience">EXPERIENCE</a></li>
+            <li class="col-sm-3"><a href="#education">EDUCATION</a></li>
+            <li class="col-sm-3"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="col-sm-3"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 		<div id="main-wrapper" class="col-md-12">
 		<div class="container-fluid">	
-		<header id="intro" class="col-md-12">
-      		
-
-		</header>
+		<header id="intro" class="col-md-12 hidden-sm hidden-xs"></header>
 
 		<section id="about" class="col-md-12">
           <div>
@@ -95,7 +110,7 @@
                     <h3>Knowledge</h3>
                     <p></p>
                   </div>
-                  <div class="col-md-3 col-sm-3">
+                  <div class="col-md-3 col-sm-6 col-xs-6">
                     <ul class="knowledge-list">
                       <li><i class="glyphicon glyphicon-ok"></i> HTML5</li>
                       <li><i class="glyphicon glyphicon-ok"></i> CSS3</li>
@@ -104,7 +119,7 @@
                       <li><i class="glyphicon glyphicon-ok"></i> GitHub</li>
                     </ul>
                   </div>
-                  <div class="col-md-3 col-sm-3">
+                  <div class="col-md-3 col-sm-6 col-xs-6">
                     <ul class="knowledge-list">
                       <li><i class="glyphicon glyphicon-ok"></i> Bootstrap</li>
                       <li><i class="glyphicon glyphicon-ok"></i> JSON</li>
@@ -113,7 +128,7 @@
                       <li><i class="glyphicon glyphicon-ok"></i> Compass</li>
                     </ul>
                   </div>
-                  <div class="col-md-3 col-sm-3">
+                  <div class="col-md-3 col-sm-6 col-xs-6">
                     <ul class="knowledge-list">
                       <li><i class="glyphicon glyphicon-ok"></i> MySQL</li>
                       <li><i class="glyphicon glyphicon-ok"></i> PHP</li>
@@ -122,7 +137,7 @@
                       <li><i class="glyphicon glyphicon-ok"></i> Canvas</li>
                     </ul>
                   </div>
-                  <div class="col-md-3 col-sm-3">
+                  <div class="col-md-3 col-sm-6 col-xs-6">
                     <ul class="knowledge-list">
                       <li><i class="glyphicon glyphicon-ok"></i> AJAX</li>
                       <li><i class="glyphicon glyphicon-ok"></i> SourceTree</li>
@@ -213,18 +228,18 @@
                 <div id="isotope-sort-wrapper">
                     <div id="isotope-sort-header" class="col-md-12">SORT BY:</div>
                     <div id="sort-icons-wrapper" class="col-md-10 col-md-offset-1">
-                      <div class="sort-icon filter col-md-3" data-filter=".angular" id="angular"><img src="img/icons/angularjs.png" alt="">  AngularJS</div>
-                      <div class="sort-icon filter col-md-3" data-filter=".jquery" id="jquery"><img src="img/icons/jquery.png" alt="">  Jquery</div>
-                      <div class="sort-icon filter col-md-3" data-filter=".canvas" id="canvas"><img src="img/icons/canvas.png" alt="">  Canvas</div>
-                      <div class="sort-icon filter col-md-3" data-filter=".javascript" id="javascript"><img src="img/icons/js-logo.png" alt="">  JavaScript</div>
-                      <div class="sort-icon filter col-md-3" data-filter=".mongo" id="html"><img src="img/icons/mongo.png" alt="">  MongoDB</div>
-                      <div class="sort-icon filter col-md-3" data-filter=".css" id="css"><img src="img/icons/css.png" alt="">  CSS3</div>
-                      <div class="sort-icon filter col-md-3" data-filter=".node" id="node"><img src="img/icons/node-js.png" alt="">  NodeJS</div>
-                      <div class="sort-icon filter col-md-3" data-filter=".bootstrap" id="bootstrap"><img src="img/icons/logo-bootstrap.png" alt="">  Bootstrap</div>
+                      <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".angular" id="angular"><img src="img/icons/angularjs.png" alt="">  AngularJS</div>
+                      <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".jquery" id="jquery"><img src="img/icons/jquery.png" alt="">  Jquery</div>
+                      <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".canvas" id="canvas"><img src="img/icons/canvas.png" alt="">  Canvas</div>
+                      <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".javascript" id="javascript"><img src="img/icons/js-logo.png" alt="">  JavaScript</div>
+                      <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".mongo" id="html"><img src="img/icons/mongo.png" alt="">  MongoDB</div>
+                      <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".css" id="css"><img src="img/icons/css.png" alt="">  CSS3</div>
+                      <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".node" id="node"><img src="img/icons/node-js.png" alt="">  NodeJS</div>
+                      <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".bootstrap" id="bootstrap"><img src="img/icons/logo-bootstrap.png" alt="">  Bootstrap</div>
                     </div>
                 </div>
                 <div id="Container" class="col-md-12">
-                  <div class="mix html css javascript angular node portfolio-item col-md-4">
+                  <div class="mix html css javascript angular node portfolio-item col-md-4 col-sm-6">
                   <a href="http://students.digitalcrafts.com/backTableBankers"><img src="img/portfolio/screen_shot_interactive_data_map_lang.png" alt="Interactive Data Map">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -237,7 +252,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css javascript angular node bootstrap portfolio-item col-md-4">
+                  <div class="mix html css javascript angular node bootstrap portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/the_masters_tweets"><img src="img/portfolio/screen_shot_the_masters_tweets.png" alt="The Masters Tweets">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -250,7 +265,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4">
+                  <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/blackjack"><img src="img/portfolio/screen_shot_blackjack.png" alt="Blackjack">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -263,7 +278,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4">
+                  <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/MG-Transitions"><img src="img/portfolio/screen_shot_memory_game.png" alt="The Memory Game">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -276,7 +291,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4">
+                  <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/Bootstrap-Gallery"><img src="img/portfolio/screen_shot_bootstrap_gallery.png" alt="Bootstrap Gallery Labs!">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -289,7 +304,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4">
+                  <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/MovieApp"><img src="img/portfolio/screen_shot_movie_app.png" alt="Movie App">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -302,7 +317,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css javascript canvas portfolio-item col-md-4">
+                  <div class="mix html css javascript canvas portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/BouncyBall"><img src="img/portfolio/screen_shot_bouncy_ball.png" alt="Bouncy Ball">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -315,7 +330,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css javascript canvas jquery bootstrap portfolio-item col-md-4">
+                  <div class="mix html css javascript canvas jquery bootstrap portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/WeatherApp"><img src="img/portfolio/screen_shot_weather_app.png" alt="The Weather App">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -328,7 +343,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css javascript portfolio-item col-md-4">
+                  <div class="mix html css javascript portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/Tic-Tac-Toe"><img src="img/portfolio/screen_shot_tic_tac_toe.png" alt="Tic Tac Toe">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -341,7 +356,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css javascript jquery portfolio-item col-md-4">
+                  <div class="mix html css javascript jquery portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/Ajax-APIs-Intro"><img src="img/portfolio/screen_shot_ajax_stock_ticker.png" alt="Ajax Stock Ticker">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -354,7 +369,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css javascript portfolio-item col-md-4">
+                  <div class="mix html css javascript portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/So-Many-Options-Timer"><img src="img/portfolio/screen_shot_too_many_options_timer.png" alt="Too Many Options Timer">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -367,7 +382,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css angular javascript portfolio-item col-md-4">
+                  <div class="mix html css angular javascript portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/interactive_map"><img src="img/portfolio/screen_shot_interactive_map.png" alt="Too Many Options Timer">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -380,7 +395,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css angular mongo bootstrap node express javascript portfolio-item col-md-4">
+                  <div class="mix html css angular mongo bootstrap node express javascript portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/Landmarks/front_end"><img src="img/portfolio/screen_shot_landmarks.png" alt="Too Many Options Timer">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -393,7 +408,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css javascript canvas portfolio-item col-md-4">
+                  <div class="mix html css javascript canvas portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/canvasgame"><img src="img/portfolio/screen_shot_goblins_and_zombies2.png" alt="Goblins and Zombies">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -406,7 +421,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="mix html css angular mongo bootstrap node express jquery javascript portfolio-item col-md-4">
+                  <div class="mix html css angular mongo bootstrap node express jquery javascript portfolio-item col-md-4 col-sm-6">
                   <a href="http://tristanlobaugh.com/coffee/front-end"><img src="img/portfolio/screen_shot_coffee_shop.png" alt="Too Many Options Timer">
                     <div class="item-cover">
                       <div class="item-cover-content">
@@ -449,9 +464,9 @@
                         <figcaption><span class="my-contact-heading">Phone</span><span class="my-contact-data">(404)-664-0691</span></figcaption>
                       </figure> -->
                     </div>
-                    <div class="block-my-social">
+                    <div class="block-my-social col-md-12">
                       <h3>I'm in the social networks</h3>
-                      <div class="social-links-list col-md-12">
+                      <div class="social-links-list col-md-12 col-sm-2 col-xs-3">
                         <div class="social-icons col-md-3">
                           <a href="https://linkedin.com/in/TristanLobaugh" class="my-social-link"><img src="img/icons/linkedin-icon.png" alt="LinkedIn">
                             <div class="col-md-12 social-text">Linkedin</div>
@@ -475,7 +490,7 @@
                       <input class="col-md-9" type="text" name="name" placeholder="Your Name" pattern="^[a-zA-Z][a-zA-Z0-9-_.]{1,20}$">
                       <input class="col-md-9" type="email" name="email" placeholder="Your Email">
                       <textarea class="col-md-9" name="message" placeholder="Your Message"></textarea>
-                      <div class="col-md-3" id="contact-form-btn">
+                      <div class="col-md-3 col-sm-2 col-xs-3" id="contact-form-btn">
                         <div id="email-img" class="col-md-6 col-md-offset-3">
                           <img src="img/icons/email-icon.png" alt="Email">
                         </div>
