@@ -75,7 +75,7 @@ nav li:hover a{
 	padding: 10px 0;
 }
 .navbar-inverse{
-	background-color: black!important;
+	background-color: transparent;
 	border: 0;
 }
 #page-wrapper{
