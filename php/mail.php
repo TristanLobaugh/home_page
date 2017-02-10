@@ -13,7 +13,7 @@
       $body = $_POST['message'];
       $mail->AddReplyTo($_POST['email'],$_POST['name']);
       $mail->SetFrom('hello@tristanlobaugh.com');
-      $mail->AddAddress("rob@digitalcrafts.com", "Tristan Lobaugh");
+      $mail->AddAddress("ttrader_atl@yahoo.com", "Tristan Lobaugh");
       $mail->Subject    = "Message from TristanLobaugh.com";
       $mail->MsgHTML("Message From: " . $_POST['name'] . "  | Email: " . $_POST['email'] . " | "  . $body);
 
