@@ -18,7 +18,6 @@
       } else {
       echo "Message sent!";
       }
-      exit;
       header('location: /#contact');
 
 ?>
