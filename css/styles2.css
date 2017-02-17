@@ -2,6 +2,10 @@ body {
 
 }
 
+h1 {
+	font-family: 'Varela Round', sans-serif;
+}
+
 #navbar {
 	background-color: #262626;
 	height: 60px;
@@ -9,13 +13,19 @@ body {
 	text-align: center;
 }
 
-.navbar-brand {
+#navbar .navbar-brand {
+	color: #fff;
 	padding: 5px 15px;
 }
 
 .navbar-brand .nav-name {
+	font-family: 'Varela Round', sans-serif;
 	font-size: 24px;
-	padding-bottom: 5px;
+	padding-bottom: 6px;
+}
+
+.navbar-brand .nav-title {
+	font-family: 'Roboto', sans-serif;
 }
 
 #navbar ul {
@@ -40,6 +50,40 @@ body {
 	color: #ffbf00;
 }
 
-#navbar a:hover {
+#navbar li a:hover {
 	color: #ffd966;
 }
+
+#main-wrapper {
+	margin-top: 80px;
+}
+
+.line {
+	width: 100px;
+	height: 4px;
+	background-color: #ffbf00;
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+
+.heading-description {
+	font-size: 18px;
+	background-color: #eaf1f1;
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+.about-photos {
+	text-align: center;
+}
+
+.about-photos img{
+	max-width: 80%;
+	border-radius: 50%;
+}
+
+
+
