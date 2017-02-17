@@ -3,13 +3,14 @@ body {
 }
 
 h1 {
+	margin-top: 80px;
 	font-family: 'Varela Round', sans-serif;
 }
 
 #navbar {
 	background-color: #262626;
 	height: 60px;
-	opacity: .90;
+	opacity: .95;
 	text-align: center;
 }
 
@@ -32,10 +33,6 @@ h1 {
 	text-align: center;
 }
 
-#navbar li {
-
-}
-
 #navbar li a {
 	font-size: 14px;
 	padding-top: 20px;
@@ -55,7 +52,7 @@ h1 {
 }
 
 #main-wrapper {
-	margin-top: 80px;
+
 }
 
 .line {
@@ -71,7 +68,7 @@ h1 {
 	background-color: #eaf1f1;
 	display: inline-block;
 	padding: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	font-weight: 400;
 	letter-spacing: 3px;
 }
@@ -80,10 +77,91 @@ h1 {
 	text-align: center;
 }
 
-.about-photos img{
-	max-width: 80%;
-	border-radius: 50%;
+.about-photos .img-wrapper {
+	margin: auto;
+	max-width: 450px;
+	margin-bottom: 30px;
 }
 
+.about-photos img{
+	filter: grayscale(100%);
+	width: 100%;
+	border-radius: 50%;
+	height: auto;
+}
 
+.about-photos .photo-title {
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+
+.photo-description {
+	font-size: 16px;
+	text-align: center;
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
+	margin-bottom: 80px;
+}
+
+#portfolio {
+	background-color: #eaf1f1;
+}
+
+#portfolio .heading-description {
+	background-color: #fff;
+}
+
+#isotope-sort-header{
+	font-size: 26px;
+}
+#sort-icons-wrapper{
+	margin-bottom: 30px;
+}
+.sort-icon{
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#Container .mix{
+    display: none;
+}
+.portfolio-item{
+	position: relative;
+	margin: 10px -5px;
+}
+.portfolio-item img{
+	border-radius: 10px;
+	width: 100%;
+}
+.item-cover{
+	position: absolute;
+	top: 5%;
+	left: 7.5%;
+	margin: auto;
+	width: 85%;
+	height: 90%;
+	background: rgba(241, 241, 241, 0.8);
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.item-cover:hover{
+	opacity: 1;
+}
+
+.item-cover-line{
+	height: 3px;
+	background-color: #ffbf00;
+	margin: auto;
+	width: 80%;
+	margin-bottom: 10px;
+}
+
+.item-description {
+	padding: 0 1px;
+}
 
