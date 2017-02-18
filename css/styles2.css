@@ -73,6 +73,10 @@ h1 {
 	letter-spacing: 3px;
 }
 
+#about {
+	margin-bottom: 60px;
+}
+
 .about-photos {
 	text-align: center;
 }
@@ -94,15 +98,22 @@ h1 {
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 2px;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 }
 
 .photo-description {
-	font-size: 16px;
+	font-size: 18px;
 	text-align: center;
 	font-family: 'Crimson Text', serif;
 	font-style: italic;
-	margin-bottom: 80px;
+}
+
+#tristan {
+	display: none;
+}
+
+#chewie {
+	display: none;
 }
 
 #portfolio {
