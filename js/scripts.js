@@ -35,4 +35,8 @@ $(document).ready(() => {
 	$('#contact-form-btn').click(() => {
 		$('#contact-form').submit();
 	});
+
+	$(window).load(() => {
+		$('body').addClass('load');
+	});
 });

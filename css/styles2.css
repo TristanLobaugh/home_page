@@ -1,5 +1,10 @@
 body {
+	opacity: 0;
+	transition: opacity 2.5s ease-in;
+}
 
+.load {
+	opacity: 1;
 }
 
 h1 {
@@ -79,6 +84,10 @@ h1 {
 
 .about-photos {
 	text-align: center;
+}
+
+.photo-wrapper:hover {
+	cursor: pointer;
 }
 
 .about-photos .img-wrapper {
