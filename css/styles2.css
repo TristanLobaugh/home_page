@@ -107,6 +107,7 @@ h1 {
 
 #portfolio {
 	background-color: #eaf1f1;
+	padding-bottom: 80px;
 }
 
 #portfolio .heading-description {
@@ -120,6 +121,7 @@ h1 {
 	margin-bottom: 30px;
 }
 .sort-icon{
+	text-align: center;
 	cursor: pointer;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -164,4 +166,65 @@ h1 {
 .item-description {
 	padding: 0 1px;
 }
+
+#form-wrapper {
+	padding: 0;
+	margin-bottom: 50px;
+}
+
+#form-wrapper input {
+	height: 60px;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #ffbf00;
+	border-left: 1px solid #ffbf00;
+}
+
+#form-wrapper textarea {
+	height: 220px;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #ffbf00;
+	border-left: 1px solid #ffbf00;
+}
+
+#form-wrapper .form-control {
+	border-radius: 0px;
+	box-shadow: none;
+}
+
+#contact-info-wrapper, #contact-message-wrapper, #contact-form-btn {
+	padding-left: 0px;
+}
+
+#form-wrapper #contact-form-btn {
+	margin-top: 20px;
+	color: #999999;
+	font-size: 18px;
+	background-color: #fff;
+	letter-spacing: 3px;
+	border: 1px solid #ffbf00;
+	padding-right: 0px;
+}
+
+footer {
+	text-align: center;
+	font-size: 16px;
+	margin: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 80px;
+	height: 80px;
+	background-color: #ccc;
+}
+
+footer img {
+	max-height: 50px;
+}
+
+
+
+
+
+
 
