@@ -1,589 +1,248 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Tristan Lobaugh</title>
-    <style>
-        #load_screen{
-            background: #000;
-            opacity: 1;
-            position: fixed;
-            z-index: 10;
-            top: 0px;
-            width: 100%;
-            height: 1600px;
-        }
-        #loading{
-            text-align: center;
-            color: #E04D01;
-            width: 300px;
-            height: 24px;
-            margin: 300px auto 10px;
-        }
-        #loader{
-            margin: 0px auto;
-            border: 8px solid #bfbfbf;
-            border-top: 8px solid #E04D01;
-            border-bottom: 8px solid #E04D01;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            animation: spin 3s linear infinite;
-
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-    <script>
-        window.addEventListener("load", function(){
-            setTimeout(function(){
-                document.body.removeChild(document.getElementById("load_screen"));
-            }, 2500)
-        });
-    </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="UTF-8">
+	<title>Tristan Lobaugh</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <div id="load_screen">
-        <div id="loading">Loading Document</div>
-        <div id="loader"></div>
-    </div>
-    <div id="page-wrapper">
-        <div id="sidebar-wrapper" class="header-sidebar col-md-2 hidden-sm hidden-xs">
-            <nav id="top-navigation" class="navbar navbar-inverse navbar-fixed-left">
-                <div id="header-wrapper">
-                    <div id="header-pic-wrapper">
-                        <a id="header-pic" href="index.html" class="logo-wrapper"><img src="img/anvil3.png" alt="Tristan Lobaugh"></a>
-                    </div>
-                    <div class="header-name">Tristan
-                        <br>Lobaugh</div>
-                </div>
-                <ul class="nav top-menu">
-                    <li><a href="#intro">HOME</a></li>
-                    <li><a href="#about">ABOUT ME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#experience">EXPERIENCE</a></li>
-                    <li><a href="#education">EDUCATION</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="secondary-nav-bar" class="hidden-lg hidden-md col-sm-12 col-xs-12">
-            <nav id="secondary-navigation" class="navbar navbar-inverse navbar-fixed-top">
-                <div>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
-                        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div id="mainNavBar" class="collapse navbar-collapse">
-                    <ul id="sec-list" class="nav top-menu">
-                        <li class="col-sm-3"><a href="#about">HOME</a></li>
-                        <li class="col-sm-3"><a href="#about">ABOUT ME</a></li>
-                        <li class="col-sm-3"><a href="#skills">SKILLS</a></li>
-                        <li class="col-sm-3"><a href="#experience">EXPERIENCE</a></li>
-                        <li class="col-sm-3"><a href="#education">EDUCATION</a></li>
-                        <li class="col-sm-3"><a href="#portfolio">PORTFOLIO</a></li>
-                        <li class="col-sm-3"><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div id="main-wrapper" class="col-md-12">
-            <div class="container-fluid">
-                <header id="intro" class="col-md-12 hidden-sm hidden-xs"></header>
-                <section id="about" class="col-md-12">
-                    <div>
-                        <div class="section-heading">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h1>ABOUT ME</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-content">
-                            <div class="block-about-me">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-12 col-xs-12">
-                                        <div class="about-avatar-wrapper"><img src="img/about_avatar.jpg" alt="Tristan Lobaugh" class="img-responsive about-avatar">
-                                            <a class="col-md-12 col-sm-12 col-xs-12" target="_blank" href="http://tristanlobaugh.com/documents/Resume_Tristan_Lobaugh.pdf">Download resume as .pdf</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-12 col-xs-12">
-                                        <ul class="about-me-list">
-                                            <li><span>Name:</span>&nbsp;Tristan Lobaugh</li>
-                                            <li><span>Date of birth:</span>&nbsp;8 July 1971</li>
-                                            <li><span>Address:</span>&nbsp;Atlanta, GA</li>
-                                            <li><span>What do I know:</span>
-                                                <br>Detail oriented and analytical mindset with 15+ years of equities trading experience. I enjoy developing algorithms to solve complex solutions, and problem solving to overcome difficult coding challenges. Builder and maker of things.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="skills" class="col-md-12">
-                    <div class="section-heading">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1>SKILLS</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-content">
-                        <div class="block-my-skills">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h2>Just my awesome skills</h2>
-                                    <div>With a passionate fervor I craft clean responsive websites and applications. My current tools of the trade include but not limited to coding in JavaScript, HTML5, CSS3, jQuery, AngularJS along with experience and knowledge in both the MEAN and LAMP stacks. </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="block-my-knowledge">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3>Profecient In:</h3>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-6">
-                                <ul class="knowledge-list">
-                                    <li><i class="glyphicon glyphicon-ok"></i> HTML5</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> CSS3</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Javascript</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> JQuery</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-6">
-                                <ul class="knowledge-list">
-                                    <li><i class="glyphicon glyphicon-ok"></i> Bootstrap</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> JSON</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> AngularJS</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Node.js</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-6">
-                                <ul class="knowledge-list">
-                                    <li><i class="glyphicon glyphicon-ok"></i> MongoDB</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Compass</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Canvas</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> OOP</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-6">
-                                <ul class="knowledge-list">
-                                    <li><i class="glyphicon glyphicon-ok"></i> GitHub</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> AJAX</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Express.js</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Terminal</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-12">
-                                <h3>Working Knowledge:</h3>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-6">
-                                <ul class="knowledge-list">
-                                    <li><i class="glyphicon glyphicon-ok"></i> ReactJS</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> MySQL</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> PHP</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Babel</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> WordPress</li>                                  
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-6">
-                                <ul class="knowledge-list">
-                                    <li><i class="glyphicon glyphicon-ok"></i> Agile</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Apache</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Socket.IO</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Webpack</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Drupal</li>                                    
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-6">
-                                <ul class="knowledge-list">
-                                    <li><i class="glyphicon glyphicon-ok"></i> API Creation</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> AWS</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Git</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> SASS</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Scrum</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-6">
-                                <ul class="knowledge-list">
-                                    <li><i class="glyphicon glyphicon-ok"></i> Heroku</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> SourceTree</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Linux</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> Mongoose</li>
-                                    <li><i class="glyphicon glyphicon-ok"></i> REST</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                        
-                </section>
-                <section id="experience" class="col-md-12">
-                    <div class="section-heading">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1>EXPERIENCE</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-content">
-                        <div class="block-my-experience">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h3>Full Stack Developer</h3>
-                                    <h4>DigitalCrafts - February 2016 to Present</h4>
-                                    <p>Full stack developer in 16 week immersive bootcamp. Emphasis placed on learning Javascript as well as Javascript frameworks. Worked on group and individual projects on a daily basis to create high-quality front and back-end development for web sites..</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-timeline">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label></label>
-                                    <div class="thumb company1"><span>2016 - Now</span></div>
-                                    <div class="content-perspective">
-                                        <div class="content">
-                                            <div class="content-inner">
-                                                <h3>Senior Equities Trader</h3>
-                                                <h4>T3 Trading Group - November 2014 to December 2015</h4>
-                                                <p>Managed a portfolio over a 16 year period navigating volatile and rapidly changing markets. Optimized trading strategies using quantitative and data analysis. Was able to develop trading profits and outperform some of the most challenging markets ever seen. Experience trading in: ETFs, Equities, Futures and options.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="education" class="col-md-12">
-                    <div class="section-heading">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1>EDUCATION</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-content">
-                        <div class="block-my-education">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h3>DigitalCrafts</h3>
-                                    <h4>Atlanta, Georgia - 2016</h4>
-                                    <p>16 Week Immersive Bootcamp: Program covers 2 full web stacks, the MEAN(MongoDB, ExpressJS, AngularJS, NodeJS) and LAMP(Linux, Apache, MySQL, and PHP) stacks.</p>
-                                </div>
-                                <div class="col-md-12">
-                                    <h3>Auburn University</h3>
-                                    <h4>Auburn, Alabama - 1989-1993</h4>
-                                    <p>Bachelor of Science: Finance</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="portfolio" class="col-md-12">
-                    <div class="section-heading">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1>PORTFOLIO</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-content">
-                        <div class="row">
-                            <div id="portfolio-wrapper" class="col-md-12">
-                                <div id="isotope-sort-wrapper">
-                                    <div id="isotope-sort-header" class="col-md-12">SORT BY:</div>
-                                    <div id="sort-icons-wrapper" class="col-md-10 col-md-offset-1">
-                                        <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".angular" id="angular"><img src="img/icons/angularjs.png" alt=""> AngularJS</div>
-                                        <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".jquery" id="jquery"><img src="img/icons/jquery.png" alt=""> Jquery</div>
-                                        <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".canvas" id="canvas"><img src="img/icons/canvas.png" alt=""> Canvas</div>
-                                        <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".javascript" id="javascript"><img src="img/icons/js-logo.png" alt=""> JavaScript</div>
-                                        <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".mongo" id="html"><img src="img/icons/mongo.png" alt=""> MongoDB</div>
-                                        <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".css" id="css"><img src="img/icons/css.png" alt=""> CSS3</div>
-                                        <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".node" id="node"><img src="img/icons/node-js.png" alt=""> NodeJS</div>
-                                        <div class="sort-icon filter col-md-3 col-sm-6 col-xs-6" data-filter=".bootstrap" id="bootstrap"><img src="img/icons/logo-bootstrap.png" alt=""> Bootstrap</div>
-                                    </div>
-                                </div>
-                                <div id="Container" class="col-md-12">
-                                    <div class="mix html css javascript angular node portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://students.digitalcrafts.com/backTableBankers"><img src="img/portfolio/screen_shot_interactive_data_map_lang.jpg" alt="Interactive Data Map">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Interactive Data Map</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css javascript angular node bootstrap portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/the_masters_tweets"><img src="img/portfolio/screen_shot_the_masters_tweets.jpg" alt="The Masters Tweets">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">The Masters Tweets</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/blackjack"><img src="img/portfolio/screen_shot_blackjack.jpg" alt="Blackjack">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Blackjack</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/MG-Transitions"><img src="img/portfolio/screen_shot_memory_game.jpg" alt="The Memory Game">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">The Memory Game</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/Bootstrap-Gallery"><img src="img/portfolio/screen_shot_bootstrap_gallery.jpg" alt="Bootstrap Gallery Labs!">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Bootstrap Gallery: Labs!</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css javascript jquery bootstrap portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/MovieApp"><img src="img/portfolio/screen_shot_movie_app.jpg" alt="Movie App">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Movie App</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css javascript canvas bootstrap jquery angular node portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/Orb-Blitz"><img src="img/portfolio/screen_shot_bouncy_ball.jpg" alt="Bouncy Ball">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Orb-Blitz!</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css javascript canvas jquery bootstrap portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/WeatherApp"><img src="img/portfolio/screen_shot_weather_app.jpg" alt="The Weather App">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Weather App</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css javascript portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/Tic-Tac-Toe"><img src="img/portfolio/screen_shot_tic_tac_toe.jpg" alt="Tic Tac Toe">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Tic Tac Toe</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css javascript jquery portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/Ajax-APIs-Intro"><img src="img/portfolio/screen_shot_ajax_stock_ticker.jpg" alt="Ajax Stock Ticker">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">AJAX Stock Ticker</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css javascript portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/So-Many-Options-Timer"><img src="img/portfolio/screen_shot_too_many_options_timer.jpg" alt="Too Many Options Timer">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Options Timer</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css angular javascript portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/interactive_map"><img src="img/portfolio/screen_shot_interactive_map.jpg" alt="Too Many Options Timer">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Interactive Delegate Map</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css angular mongo bootstrap node express javascript portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/Landmarks/front_end"><img src="img/portfolio/screen_shot_landmarks.jpg" alt="Too Many Options Timer">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Landmarks of the USA</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css javascript canvas portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/canvasgame"><img src="img/portfolio/screen_shot_goblins_and_zombies2.jpg" alt="Goblins and Zombies">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Goblins and Zombies</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description text-center">
-                                                      <div>Catch as many Goblins as you can!</div>
-                                                      <div>Use the arrow keys to move.</div>
-                                                      <div>Space bar drop bombs to kill zombies.</div>
-                                                      <div>Collect clocks to add more time!</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mix html css angular mongo bootstrap node express jquery javascript portfolio-item col-md-4 col-sm-6">
-                                        <a target="_blank" href="http://tristanlobaugh.com/coffee/front-end"><img src="img/portfolio/screen_shot_coffee_shop.jpg" alt="Too Many Options Timer">
-                                            <div class="item-cover">
-                                                <div class="item-cover-content">
-                                                    <h3 class="item-cover-title">Coffee Shop Internet Commerce</h3>
-                                                    <div class="line">
-                                                        <hr>
-                                                    </div>
-                                                    <div class="description"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="contact" class="col-md-12">
-                    <div class="section-heading">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1>CONTACT</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-content">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3>Let's keep in touch</h3>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="block-my-contact-form">
-                            <div class="row">
-                                <div id="social-networks-wrapper" class="col-md-4">
-                                    <div class="block-my-contacts">
-                                    </div>
-                                    <div class="block-my-social col-md-12">
-                                        <h3>I'm in the social networks</h3>
-                                        <div class="social-links-list col-md-12 col-sm-2 col-xs-3">
-                                            <div class="social-icons col-md-3">
-                                                <a target="_blank" href="https://linkedin.com/in/TristanLobaugh" class="my-social-link"><img src="img/icons/linkedin-icon.png" alt="LinkedIn">
-                                                    <div class="col-md-12 social-text">Linkedin</div>
-                                                </a>
-                                            </div>
-                                            <div class="social-icons col-md-3">
-                                                <a target="_blank" href="https://github.com/TristanLobaugh" class="my-social-link"><img src="img/icons/github-icon.png" alt="Github">
-                                                    <div class="col-md-12 social-text">Github</div>
-                                                </a>
-                                            </div>
-                                            <div class="social-icons col-md-3">
-                                                <a target="_blank" href="https://twitter.com/tristanlobaugh" class="my-social-link"><img src="img/icons/twitter-icon.png" alt="Twitter">
-                                                    <div class="col-md-12 social-text">Twitter</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <form id="contact-form" action="php/mail.php" method="post" class="contact-form">
-                                        <input class="col-md-9" type="text" name="name" placeholder="Your Name" pattern="^[a-zA-Z][a-zA-Z0-9-_.]{1,20}$">
-                                        <input class="col-md-9" type="email" name="email" placeholder="Your Email">
-                                        <textarea class="col-md-9" name="message" placeholder="Your Message"></textarea>
-                                        <div class="col-md-3 col-sm-2 col-xs-3" id="contact-form-btn">
-                                            <div id="email-img" class="col-md-6 col-md-offset-3">
-                                                <img src="img/icons/email-icon.png" alt="Email">
-                                            </div>
-                                            <div class="col-md-12" id="submit-text">Submit</div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.firefly-0.5-min.js"></script>
-    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery_smooth_scroll.js"></script>
-    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+	<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="navbar-header col-sm-5 hidden-xs">
+					<a class="navbar-brand" href="#">
+						<div class="nav-name col-sm-12">Tristan Lobaugh</div>
+						<div class="nav-title col-sm-12">Software Developer</div>
+					</a>
+				</div>
+				<ul class="nav navbar-nav col-sm-7 col-xs-12">
+					<li class="col-md-offset-1 col-md-3 col-sm-4 col-xs-4"><a class="active" href="#about">ABOUT</a></li>
+					<li class="col-md-3 col-sm-4 col-xs-4"><a href="#portfolio">PORTFOLIO</a></li>
+					<li class="col-md-3 col-sm-4 col-xs-4"><a href="http://tristanlobaugh.com/documents/Resume_Tristan_Lobaugh.pdf">RESUME</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="main-wrapper">
+		<div class="container-fluid">
+			<header id="intro"></header>
+			<section id="about">
+				<div class="section-heading">
+					<div class="row">
+						<div class="col-xs-offset-1 col-xs-10">
+							<h1>ABOUT ME</h1>
+							<div class="line"></div>
+							<div class="heading-description">A FEW THINGS ABOUT ME! - CLICK FOR MORE</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-wrapper">
+					<div class="about-photos row">
+						<div id="dev-photo" class="photo-wrapper col-xs-offset-1 col-xs-5">
+							<div class="img-wrapper">
+								<img class="about-img" src="img/tristan3.jpg" alt="">
+							</div>
+							<div class="photo-title">TRISTAN - DEVELOPER</div>
+						</div>
+						<div id="help-photo" class="photo-wrapper col-xs-5">
+							<div class="img-wrapper">
+								<img class="about-img" src="img/chewie.jpg" alt="">
+							</div>
+							<div class="photo-title">CHEWIE - HELP DESK</div>
+						</div>
+					</div>
+					<div class="description-wrapper row">
+						<div id="tristan" class="photo-description col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
+							Hi! I am Tristan, an Atlanta-based Software Developer. After many successful years as a professional stock trader, I decided to make a career change and took a giant leap into the field of Web development. I completed DigitalCrafts 16 week full-stack web development program. The program focused on both the MEAN and LAMP stacks with emphasis on the MEAN stack (MongoDB, ExpressJS, AngularJS, and Node.js). My current focus is to improve upon what I have already learned so I can be a better developer. I have also spent time learning new technologies such as Ruby and React. I am detail oriented with an analytical mindset and enjoy solving problems with the skills that I have learned.
+						</div>
+						<div id="chewie" class="photo-description col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
+							Chewie is my chocolate lab. Most people ask if he used to "chew" up everything hence the name Chewie. I have to explain to them that being a fan of all things sci-fi, Chewie is actually named after the most famous of Wookies Chewbacca! Chewie is an old man in dog years and has been my constant companion for the last 8 years. He was a rescue dog at the age of 2 when we first met and I couldn't have been more lucky with such a gentle, loving and well-behaved dog. Chewie is always checking in on me when I'm doing a marathon coding session. He will come in and lay his head on my knee to show his support and looking for a scratch behind the ear. Couldn't ask for a better buddy!
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="portfolio">
+				<div class="section-heading">
+					<div class="row">
+						<div class="col-xs-offset-1 col-xs-10">
+							<h1>PORTFOLIO</h1>
+							<div class="line"></div>
+							<div class="heading-description">MY PORTFOLIO - TRY SORTING BY TECHNOLOGY!</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-wrapper">
+          <div class="row">
+              <div id="portfolio-wrapper" class="col-md-offset-1 col-md-10 col-xs-12">
+                  <div id="isotope-sort-wrapper">
+                      <div id="isotope-sort-header" class="col-md-12">SORT BY:</div>
+                      <div id="sort-icons-wrapper" class="col-md-12">
+                          <div class="sort-icon filter col-md-3 col-sm-3 col-xs-6" data-filter=".angular" id="angular"><img class="center-block" src="img/icons/angularjs.png" alt="">AngularJS</div>
+                          <div class="sort-icon filter col-md-3 col-sm-3 col-xs-6" data-filter=".jquery" id="jquery"><img class="center-block" src="img/icons/jquery.png" alt="">Jquery</div>
+                          <div class="sort-icon filter col-md-3 col-sm-3 col-xs-6" data-filter=".canvas" id="canvas"><img class="center-block" src="img/icons/canvas.png" alt="">Canvas</div>
+                          <div class="sort-icon filter col-md-3 col-sm-3 col-xs-6" data-filter=".javascript" id="javascript"><img class="center-block" src="img/icons/js-logo.png" alt="">JavaScript</div>
+                          <div class="sort-icon filter col-md-3 col-sm-3 col-xs-6" data-filter=".mongo" id="html"><img class="center-block" src="img/icons/mongo.png" alt="">MongoDB</div>
+                          <div class="sort-icon filter col-md-3 col-sm-3 col-xs-6" data-filter=".css" id="css"><img class="center-block" src="img/icons/css.png" alt="">CSS3</div>
+                          <div class="sort-icon filter col-md-3 col-sm-3 col-xs-6" data-filter=".node" id="node"><img class="center-block" src="img/icons/node-js.png" alt="">NodeJS</div>
+                          <div class="sort-icon filter col-md-3 col-sm-3 col-xs-6" data-filter=".bootstrap" id="bootstrap"><img class="center-block" src="img/icons/logo-bootstrap.png" alt="">Bootstrap</div>
+                      </div>
+                  </div>
+                  <div id="Container" class="col-xs-12">
+                      <div class="mix html css javascript canvas mongo bootstrap jquery angular node portfolio-item col-md-6 col-xs-12">
+                          <a target="_blank" href="http://tristanlobaugh.com/Orb-Blitz"><img src="img/portfolio/screen_shot_orb_blitz.png" alt="Bouncy Ball">
+                              <div class="item-cover">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Orb-Blitz!</h3>
+                                      <div class="item-cover-line">
+                                          <hr>
+                                      </div>
+                                      <div class="item-description">A full stack canvas based multiplayer game built with AngularJS, NodeJS with Express and a Mongoose database.</div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>                  
+                      <div class="mix html css javascript angular node bootstrap portfolio-item col-md-6 col-xs-12">
+                          <a target="_blank" href="http://tristanlobaugh.com/the_masters_tweets"><img src="img/portfolio/screen_shot_the_masters_tweets.jpg" alt="The Masters Tweets">
+                              <div class="item-cover">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">The Masters Tweets</h3>
+                                      <div class="item-cover-line">
+                                          <hr>
+                                      </div>
+                                      <div class="item-description">View current tweets on the Masters that are populated using the Twitter API and AngularJS.</div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="mix html css javascript jquery bootstrap portfolio-item col-md-6 col-xs-12">
+                          <a target="_blank" href="http://tristanlobaugh.com/blackjack"><img src="img/portfolio/screen_shot_blackjack.jpg" alt="Blackjack">
+                              <div class="item-cover">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Blackjack</h3>
+                                      <div class="item-cover-line">
+                                          <hr>
+                                      </div>
+                                      <div class="item-description">Blackjack game written using jQuery and Bootstrap</div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="mix html css javascript canvas jquery bootstrap portfolio-item col-md-6 col-xs-12">
+                          <a target="_blank" href="http://tristanlobaugh.com/euro-weather-app"><img src="img/portfolio/screen_shot_euro_weather.png" alt="The Weather App">
+                              <div class="item-cover">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Euro Weather App</h3>
+                                      <div class="item-cover-line">
+                                          <hr>
+                                      </div>
+                                      <div class="item-description">Get the current weather for 5 major European cites using the Open Weather Map API. Also charts the avergae temperature for the next 5 days.</div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="mix html css angular mongo bootstrap node express javascript portfolio-item col-md-6 col-xs-12">
+                          <a target="_blank" href="http://tristanlobaugh.com/Landmarks/front_end"><img src="img/portfolio/screen_shot_landmarks.jpg" alt="Too Many Options Timer">
+                              <div class="item-cover">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Landmarks of the USA</h3>
+                                      <div class="item-cover-line">
+                                          <hr>
+                                      </div>
+                                      <div class="item-description">A full stack app where a person can vote on weather or not they think the landmark is located in the USA.</div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <!-- <div class="mix html css javascript canvas portfolio-item col-md-6 col-xs-12">
+                          <a target="_blank" href="http://tristanlobaugh.com/canvasgame"><img src="img/portfolio/screen_shot_goblins_and_zombies2.jpg" alt="Goblins and Zombies">
+                              <div class="item-cover">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Goblins and Zombies</h3>
+                                      <div class="item-cover-line">
+                                          <hr>
+                                      </div>
+                                      <div class="item-description text-center">
+                                        <div>Catch as many Goblins as you can!</div>
+                                        <div>Use the arrow keys to move.</div>
+                                        <div>Space bar drop bombs to kill zombies.</div>
+                                        <div>Collect clocks to add more time!</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div> -->
+                      <div class="mix html css angular mongo bootstrap node express jquery javascript portfolio-item col-md-6 col-xs-12">
+                          <a target="_blank" href="http://tristanlobaugh.com/coffee/front-end"><img src="img/portfolio/screen_shot_coffee_shop.jpg" alt="Too Many Options Timer">
+                              <div class="item-cover">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Coffee Shop</h3>
+                                      <div class="item-cover-line">
+                                          <hr>
+                                      </div>
+                                      <div class="item-description">Full Stack internet commerce app. Built using AngularJS, NodeJS with Express and a Mongoose database.</div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+			</section>
+			<section id="contact">
+				<div class="section-heading">
+					<div class="row">
+						<div class="col-xs-offset-1 col-xs-10">
+							<h1>CONTACT ME</h1>
+							<div class="line"></div>
+							<div class="heading-description">Let's stay in touch!</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-wrapper row">
+					<div id="form-wrapper" class="col-xs-offset-1 col-xs-10">
+						<form id="contact-form" action="php/mail.php" method="post" class="contact-form">
+							<div class="form-group">
+								<div id="contact-info-wrapper" class="col-md-6 col-xs-12">
+									<input class="form-control" type="text" name="name" placeholder="NAME..." pattern="^[a-zA-Z][a-zA-Z0-9-_.]{1,20}$">
+									<input class="form-control" type="email" name="email" placeholder="EMAIL...">
+									<input class="form-control" type="text" name="phone" placeholder="TELEPHONE...">
+								</div>
+								<div id="contact-message-wrapper" class="col-md-6 col-xs-12">
+									<textarea class="form-control" name="message" placeholder="MESSAGE..."></textarea>
+								</div>
+								<input id="contact-form-btn" type="submit" value="SUBMIT" class="col-md-offset-3 col-md-6 col-xs-offset-2 col-xs-8">
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>			
+		</div>
+		<footer class="col-md-12">
+			<div id="copyright" class="col-md-7 col-xs-12">Tristan Lobaugh | All Rights Reserved | © Copyright 2017</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="img-wrapper col-xs-offset-3 col-xs-2">
+					<a target="_blank" href="https://twitter.com/tristanlobaugh"><img src="img/icons/twitter-icon.png" alt="Twitter"></a>
+				</div>
+				<div class="img-wrapper col-xs-2">
+					<a target="_blank" href="https://github.com/TristanLobaugh"><img src="img/icons/github-icon.png" alt="Github"></a>
+				</div>
+				<div class="img-wrapper col-xs-2">
+					<a target="_blank" href="https://linkedin.com/in/TristanLobaugh"><img src="img/icons/linkedin-icon.png" alt="Linkedin"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery_smooth_scroll.js"></script>
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
