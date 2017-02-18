@@ -18,6 +18,6 @@
       } else {
       echo "Message sent!";
       }
-      header('location: /#contact');
+      header('location: /#about');
 
 ?>
