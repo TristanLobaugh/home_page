@@ -38,5 +38,12 @@ $(document).ready(() => {
 
 	$(window).load(() => {
 		$('body').addClass('load');
+		$('.slide-in').delay(5000).addClass('slide-active');
+	});
+
+	$(document).on('click', '.navbar-nav li', function() {
+		console.log(this);
+		$('.navbar-nav li a').removeClass('active');
+		$(this.firstChild).addClass('active');
 	});
 });
