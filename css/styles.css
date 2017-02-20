@@ -94,6 +94,10 @@ h1 {
 	transition: transform .3s;
 }
 
+#toggle-btn .icon-bar {
+	background-color: #ffbf00;
+}
+
 #toggle-btn:hover {
 	background-color: #262626;
 	transform: scale(1.2);
