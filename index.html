@@ -11,23 +11,46 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+	<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top hidden-xs">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="navbar-header col-sm-5 hidden-xs">
+				<div class="row navbar-header col-sm-5">
 					<a class="navbar-brand" href="#">
 						<div class="nav-name col-sm-12 slide-in slide-Y">Tristan Lobaugh</div>
 						<div class="nav-title col-sm-12 slide-in slide-X">Software Developer</div>
 					</a>
 				</div>
-				<ul class="nav navbar-nav col-sm-7 col-xs-12">
-					<li class="col-md-offset-1 col-md-3 col-sm-4 col-xs-4"><a class="active" href="#about">ABOUT</a></li>
-					<li class="col-md-3 col-sm-4 col-xs-4"><a href="#portfolio">PORTFOLIO</a></li>
-					<li class="col-md-3 col-sm-4 col-xs-4"><a target="_blank" href="http://tristanlobaugh.com/documents/Resume_Tristan_Lobaugh.pdf">RESUME</a></li>
+				<ul class="row nav navbar-nav col-sm-7">
+					<li class="col-md-offset-1 col-md-3 col-sm-4"><a class="active" href="#about">ABOUT</a></li>
+					<li class="col-md-3 col-sm-4"><a href="#portfolio">PORTFOLIO</a></li>
+					<li class="col-md-3 col-sm-4"><a target="_blank" href="http://tristanlobaugh.com/documents/Resume_Tristan_Lobaugh.pdf">RESUME</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+	<nav id="navbar-compact" class="navbar navbar-inverse navbar-fixed-top hidden-sm hidden-md hidden-lg">
+		<div class="container-fluid">
+			<div class="row">
+				<a class="navbar-brand col-xs-10" href="#">
+					<div class="nav-name col-xs-12 slide-in slide-Y">Tristan Lobaugh</div>
+				</a>
+				<div id="toggle-btn" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+				<div class="collapse navbar-collapse navHeaderCollapse col-xs-12">
+					<ul class="row nav navbar-nav">
+						<li class=""><a class="active" href="#about">ABOUT</a></li>
+						<li class=""><a href="#portfolio">PORTFOLIO</a></li>
+						<li class=""><a target="_blank" href="http://tristanlobaugh.com/documents/Resume_Tristan_Lobaugh.pdf">RESUME</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+
 	<div id="main-wrapper">
 		<div class="container-fluid">
 			<header id="intro"></header>
@@ -94,8 +117,8 @@
                   </div>
                   <div id="Container" class="col-xs-12">
                       <div class="mix html css javascript canvas mongo bootstrap jquery angular node portfolio-item col-md-6 col-xs-12">
-                          <a target="_blank" href="http://tristanlobaugh.com/Orb-Blitz"><img src="img/portfolio/screen_shot_orb_blitz.png" alt="Bouncy Ball">
-                              <div class="item-cover">
+                          <a target="_blank" href="http://tristanlobaugh.com/Orb-Blitz"><img src="img/portfolio/screen_shot_orb_blitz.png" alt="Orb Blitz!">
+                              <div class="item-cover hidden-xs">
                                   <div class="item-cover-content">
                                       <h3 class="item-cover-title">Orb-Blitz!</h3>
                                       <div class="item-cover-line">
@@ -104,11 +127,16 @@
                                       <div class="item-description">A full stack canvas based multiplayer game built with AngularJS, NodeJS with Express and a Mongoose database.</div>
                                   </div>
                               </div>
+                              <div class="item-cover-compact hidden-sm hidden-md hidden-lg">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Orb-Blitz!</h3>
+                                  </div>
+                              </div>                              
                           </a>
                       </div>                  
-                      <div class="mix html css javascript angular node bootstrap portfolio-item col-md-6 col-xs-12">
+                      <div class="mix html css javascript angular bootstrap portfolio-item col-md-6 col-xs-12">
                           <a target="_blank" href="http://tristanlobaugh.com/the_masters_tweets"><img src="img/portfolio/screen_shot_the_masters_tweets.jpg" alt="The Masters Tweets">
-                              <div class="item-cover">
+                              <div class="item-cover hidden-xs">
                                   <div class="item-cover-content">
                                       <h3 class="item-cover-title">The Masters Tweets</h3>
                                       <div class="item-cover-line">
@@ -117,11 +145,16 @@
                                       <div class="item-description">View current tweets on the Masters that are populated using the Twitter API and AngularJS.</div>
                                   </div>
                               </div>
+                              <div class="item-cover-compact hidden-sm hidden-md hidden-lg">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">The Masters Tweets</h3>
+                                  </div>
+                              </div>                              
                           </a>
                       </div>
                       <div class="mix html css javascript jquery bootstrap portfolio-item col-md-6 col-xs-12">
                           <a target="_blank" href="http://tristanlobaugh.com/blackjack"><img src="img/portfolio/screen_shot_blackjack.jpg" alt="Blackjack">
-                              <div class="item-cover">
+                              <div class="item-cover hidden-xs">
                                   <div class="item-cover-content">
                                       <h3 class="item-cover-title">Blackjack</h3>
                                       <div class="item-cover-line">
@@ -130,11 +163,16 @@
                                       <div class="item-description">Blackjack game written using jQuery and Bootstrap</div>
                                   </div>
                               </div>
+                              <div class="item-cover-compact hidden-sm hidden-md hidden-lg">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Blackjack</h3>
+                                  </div>
+                              </div>                                
                           </a>
                       </div>
                       <div class="mix html css javascript angular jquery bootstrap portfolio-item col-md-6 col-xs-12">
-                          <a target="_blank" href="http://tristanlobaugh.com/euro-weather-app"><img src="img/portfolio/screen_shot_euro_weather.png" alt="The Weather App">
-                              <div class="item-cover">
+                          <a target="_blank" href="http://tristanlobaugh.com/euro-weather-app"><img src="img/portfolio/screen_shot_euro_weather.png" alt="Euro Weather App">
+                              <div class="item-cover hidden-xs">
                                   <div class="item-cover-content">
                                       <h3 class="item-cover-title">Euro Weather App</h3>
                                       <div class="item-cover-line">
@@ -143,11 +181,16 @@
                                       <div class="item-description">Get the current weather for 5 major European cites using the Open Weather Map API. Also charts the average temperature for the next 5 days.</div>
                                   </div>
                               </div>
+                              <div class="item-cover-compact hidden-sm hidden-md hidden-lg">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Euro Weather App</h3>
+                                  </div>
+                              </div>                                
                           </a>
                       </div>
                       <div class="mix html css angular mongo bootstrap node express javascript portfolio-item col-md-6 col-xs-12">
-                          <a target="_blank" href="http://tristanlobaugh.com/Landmarks/front_end"><img src="img/portfolio/screen_shot_landmarks.jpg" alt="Too Many Options Timer">
-                              <div class="item-cover">
+                          <a target="_blank" href="http://tristanlobaugh.com/Landmarks/front_end"><img src="img/portfolio/screen_shot_landmarks.jpg" alt="Landmarks of the USA">
+                              <div class="item-cover hidden-xs">
                                   <div class="item-cover-content">
                                       <h3 class="item-cover-title">Landmarks of the USA</h3>
                                       <div class="item-cover-line">
@@ -156,11 +199,16 @@
                                       <div class="item-description">A full stack app where a person can vote on weather or not they think the landmark is located in the USA.</div>
                                   </div>
                               </div>
+                              <div class="item-cover-compact hidden-sm hidden-md hidden-lg">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Landmarks of the USA</h3>
+                                  </div>
+                              </div>                                
                           </a>
                       </div>
                       <!-- <div class="mix html css javascript canvas portfolio-item col-md-6 col-xs-12">
                           <a target="_blank" href="http://tristanlobaugh.com/canvasgame"><img src="img/portfolio/screen_shot_goblins_and_zombies2.jpg" alt="Goblins and Zombies">
-                              <div class="item-cover">
+                              <div class="item-cover hidden-xs">
                                   <div class="item-cover-content">
                                       <h3 class="item-cover-title">Goblins and Zombies</h3>
                                       <div class="item-cover-line">
@@ -174,11 +222,16 @@
                                       </div>
                                   </div>
                               </div>
+                              <div class="item-cover-compact hidden-sm hidden-md hidden-lg">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Goblins and Zombies</h3>
+                                  </div>
+                              </div> 
                           </a>
                       </div> -->
                       <div class="mix html css angular mongo bootstrap node express jquery javascript portfolio-item col-md-6 col-xs-12">
-                          <a target="_blank" href="http://tristanlobaugh.com/coffee/front-end"><img src="img/portfolio/screen_shot_coffee_shop.jpg" alt="Too Many Options Timer">
-                              <div class="item-cover">
+                          <a target="_blank" href="http://tristanlobaugh.com/coffee/front-end"><img src="img/portfolio/screen_shot_coffee_shop.jpg" alt="Coffee Shop">
+                              <div class="item-cover hidden-xs">
                                   <div class="item-cover-content">
                                       <h3 class="item-cover-title">Coffee Shop</h3>
                                       <div class="item-cover-line">
@@ -187,6 +240,11 @@
                                       <div class="item-description">Full Stack internet commerce app. Built using AngularJS, NodeJS with Express and a Mongoose database.</div>
                                   </div>
                               </div>
+                              <div class="item-cover-compact hidden-sm hidden-md hidden-lg">
+                                  <div class="item-cover-content">
+                                      <h3 class="item-cover-title">Coffee Shop</h3>
+                                  </div>
+                              </div>                               
                           </a>
                       </div>
                   </div>

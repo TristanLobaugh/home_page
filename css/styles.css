@@ -51,7 +51,7 @@ h1 {
 	border-bottom: 5px solid #737373;
 }
 
-#navbar .navbar-brand {
+#navbar .navbar-brand, #navbar-compact .navbar-brand {
 	color: #fff;
 	padding: 5px 15px;
 }
@@ -66,11 +66,11 @@ h1 {
 	font-family: 'Roboto', sans-serif;
 }
 
-#navbar ul {
+#navbar ul, #navbar-compact ul {
 	text-align: center;
 }
 
-#navbar li a {
+#navbar li a, #navbar-compact li a {
 	font-size: 14px;
 	padding-top: 20px;
 	text-decoration: none;
@@ -80,12 +80,23 @@ h1 {
 	color: white;
 }
 
-#navbar a.active {
+#navbar a.active, #navbar-compact a.active {
 	color: #ffbf00;
 }
 
-#navbar li a:hover {
+#navbar li a:hover, #navbar-compact li a:hover {
 	color: #ffd966;
+}
+
+#toggle-btn {
+	background-color: #262626;
+	border: none;
+	transition: transform .3s;
+}
+
+#toggle-btn:hover {
+	background-color: #262626;
+	transform: scale(1.2);
 }
 
 .line {
@@ -209,6 +220,23 @@ h1 {
 }
 .item-cover:hover{
 	opacity: 1;
+}
+
+.item-cover-compact {
+	position: absolute;
+	bottom: 5%;
+	left: 7.5%;
+	margin: auto;
+	width: 85%;
+	background: rgba(241, 241, 241, 0.8);
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.item-cover-compact h3 {
+	margin-bottom: 20px;
 }
 
 .item-cover-line{
