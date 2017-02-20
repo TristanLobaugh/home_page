@@ -208,12 +208,12 @@
 						<form id="contact-form" action="php/mail.php" method="post" class="contact-form">
 							<div class="form-group">
 								<div id="contact-info-wrapper" class="col-md-6 col-xs-12">
-									<input class="form-control" type="text" name="name" placeholder="NAME..." pattern="^[a-zA-Z][a-zA-Z0-9-_.]{1,20}$">
-									<input class="form-control" type="email" name="email" placeholder="EMAIL...">
-									<input class="form-control" type="text" name="phone" placeholder="TELEPHONE...">
+									<input class="form-control" type="text" name="name" placeholder="NAME..." pattern="^[a-zA-Z][a-zA-Z0-9-_.]{1,20}$" required="required">
+									<input class="form-control" type="email" name="email" placeholder="EMAIL..." required="required">
+									<input class="form-control" type="text" name="phone" placeholder="TELEPHONE..." required="required">
 								</div>
 								<div id="contact-message-wrapper" class="col-md-6 col-xs-12">
-									<textarea class="form-control" name="message" placeholder="MESSAGE..."></textarea>
+									<textarea class="form-control" name="message" placeholder="MESSAGE..." required="required"></textarea>
 								</div>
 								<input id="contact-form-btn" type="submit" value="SUBMIT" class="col-md-offset-3 col-md-6 col-xs-offset-2 col-xs-8">
 							</div>

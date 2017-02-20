@@ -32,7 +32,7 @@ $(document).ready(() => {
 		}
 	});
 
-	$('#contact-form-btn').click(() => {
+	$('#contact-form').submit(() => {
 		$('#contact-form').submit();
 	});
 
