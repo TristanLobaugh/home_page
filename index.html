@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top hidden-xs">
@@ -252,7 +253,7 @@
           </div>
       </div>
 			</section>
-<!-- 			<section id="contact">
+			<section id="contact">
 				<div class="section-heading">
 					<div class="row">
 						<div class="col-xs-offset-1 col-xs-10">
@@ -267,19 +268,22 @@
 						<form id="contact-form" action="php/mail.php" method="post" class="contact-form">
 							<div class="form-group">
 								<div id="contact-info-wrapper" class="col-md-6 col-xs-12">
-									<input class="form-control" type="text" name="name" placeholder="NAME..." pattern="^[a-zA-Z][a-zA-Z0-9-_.]{1,20}$" required="required">
-									<input class="form-control" type="email" name="email" placeholder="EMAIL..." required="required">
-									<input class="form-control" type="text" name="phone" placeholder="TELEPHONE..." required="required">
+									<input class="form-control" type="text" name="name" placeholder="NAME..." required>
+									<input class="form-control" type="email" name="email" placeholder="EMAIL..." required>
+									<input class="form-control" type="text" name="phone" placeholder="TELEPHONE..." required>
 								</div>
 								<div id="contact-message-wrapper" class="col-md-6 col-xs-12">
-									<textarea class="form-control" name="message" placeholder="MESSAGE..." required="required"></textarea>
+									<textarea class="form-control" name="message" placeholder="MESSAGE..." required></textarea>
 								</div>
+                <div class="col-md-offset-3 col-md-6 col-xs-offset-2 col-xs-8">
+                  <div class="g-recaptcha" data-sitekey="6LdvtB4UAAAAAP8KZ4MixHiCo501SwPGz66LMpCX"></div>
+                </div>
 								<input id="contact-form-btn" type="submit" value="SUBMIT" class="col-md-offset-3 col-md-6 col-xs-offset-2 col-xs-8">
 							</div>
 						</form>
 					</div>
 				</div>
-			</section>	 -->		
+			</section>			
 		</div>
 		<footer class="col-md-12">
 			<div id="copyright" class="col-md-7 col-xs-12">Tristan Lobaugh | All Rights Reserved | © Copyright 2017</div>
