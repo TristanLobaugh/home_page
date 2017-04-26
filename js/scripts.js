@@ -32,8 +32,10 @@ $(document).ready(() => {
 		}
 	});
 
-	$('#contact-form').submit(() => {
+	$('#contact-form').submit((event) => {
 		$('#contact-form').submit();
+		$('#contact-form')[0].reset();
+		event.preventDefault();
 	});
 
 	$(window).load(() => {
