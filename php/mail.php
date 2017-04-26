@@ -24,9 +24,9 @@
             } else {
             echo "Message sent!";
             }
-            header('location: /#contact?CaptchaPass=True');
+            header('location: /#contact');
       }else{
-            header('location: /#contact?CaptchaFail=True');
+            header('location: /#contact');
       }
 
 ?>
