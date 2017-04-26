@@ -33,8 +33,9 @@ $(document).ready(() => {
 	});
 
 	$('#contact-form').submit((event) => {
-		event.preventDefault();
 		$('#contact-form').submit();
+		$('#contact-form')[0].reset();
+		event.preventDefault();
 	});
 
 	$(window).load(() => {
