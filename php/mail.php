@@ -20,13 +20,12 @@
             $mail->MsgHTML("Message From: " . $_POST['name'] . "  | Email: " . $_POST['email'] . " | Phone: " . $_POST['phone'] . " | "  . $body);
 
             if(!$mail->Send()) {
-            echo "Mailer Error: " . $mail->ErrorInfo;
+                  echo "Mailer Error: " . $mail->ErrorInfo;
             } else {
-            echo "Message sent!";
+                  header('location: index.html?CaptchaPass=True/#contact');
             }
-            header('location: /#contact');
       }else{
-            header('location: /#contact');
+            header('location: index.html?CaptchaPass=False/#contact');
       }
 
 ?>
