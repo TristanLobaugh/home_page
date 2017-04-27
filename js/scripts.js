@@ -32,10 +32,27 @@ $(document).ready(() => {
 		}
 	});
 
-	$('#contact-form').submit((event) => {
+	$('#contact-form').submit(event => {
 		$('#contact-form').submit();
 		$('#contact-form')[0].reset();
 		event.preventDefault();
+	});
+
+	$(window).on('hashchange', event => {
+		const qs = (function(a) {
+			if (a === '') return {};
+			const b = {};
+			for (let i = 0; i < a.length; ++i) {
+				const p = a[i].split('=', 2);
+				if (p.length === 1) {
+					b[p[0]] = '';
+				} else {
+					b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, ' '));
+				}
+			}
+			return b;
+		}(window.location.search.substr(1).split('&')));
+		console.log(qs);
 	});
 
 	$(window).load(() => {
@@ -44,7 +61,6 @@ $(document).ready(() => {
 	});
 
 	$(document).on('click', '.navbar-nav li', function() {
-		console.log(this);
 		$('.navbar-nav li a').removeClass('active');
 		$(this.firstChild).addClass('active');
 	});
