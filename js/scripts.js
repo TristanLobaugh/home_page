@@ -38,7 +38,9 @@ $(document).ready(() => {
 		event.preventDefault();
 	});
 
-	$(window).on('hashchange', event => {
+	$(window).load(() => {
+		$('body').addClass('load');
+		$('.slide-in').delay(5000).addClass('slide-active');
 		const qs = (function(a) {
 			if (a === '') return {};
 			const b = {};
@@ -52,12 +54,14 @@ $(document).ready(() => {
 			}
 			return b;
 		}(window.location.search.substr(1).split('&')));
-		console.log(qs);
-	});
 
-	$(window).load(() => {
-		$('body').addClass('load');
-		$('.slide-in').delay(5000).addClass('slide-active');
+		if (qs.captchaPass === 'true') {
+			console.log('cap is true');
+			$('#message').text('Message Sent!');
+		} else if (qs.captchaPass === 'false') {
+			console.log('cap is false');
+			$('#message').text('Captcha failed. Are you a bot?');
+		}
 	});
 
 	$(document).on('click', '.navbar-nav li', function() {

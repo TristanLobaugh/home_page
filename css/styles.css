@@ -26,8 +26,6 @@ body {
 	transform: translateY(0%) scale(1);
 }
 
-	
-
 .container-fluid {
 	padding-left: 0px;
 	padding-right: 0px;
@@ -314,7 +312,12 @@ footer img {
 	padding: 0;
 }
 
-
+#message {
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-align: center;
+}
 
 
 

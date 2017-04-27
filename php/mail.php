@@ -22,10 +22,10 @@
             if(!$mail->Send()) {
                   echo "Mailer Error: " . $mail->ErrorInfo;
             } else {
-                  header('location: index.html?CaptchaPass=True/#contact');
+                  header('location: index.html?captchaPass=true/#contact');
             }
       }else{
-            header('location: index.html?CaptchaPass=False/#contact');
+            header('location: index.html?captchaPass=false/#contact');
       }
 
 ?>
