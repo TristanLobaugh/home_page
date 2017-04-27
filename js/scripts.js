@@ -56,10 +56,8 @@ $(document).ready(() => {
 		}(window.location.search.substr(1).split('&')));
 
 		if (qs.captchaPass === 'true') {
-			$('#message').scrollTop($('#message')[0].scrollHeight - $('#message')[0].clientHeight);
 			$('#message').text('Message Sent!');
 		} else if (qs.captchaPass === 'false') {
-			$('#message').scrollTop($('#message')[0].scrollHeight - $('#message')[0].clientHeight);
 			$('#message').text('Captcha failed. Are you a bot?');
 		}
 	});
